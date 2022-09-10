@@ -1,0 +1,1 @@
+export { getCryptoCurrencies } from './cryptoCurrenciesThunk'
