@@ -16,7 +16,6 @@ export const Navbar = () => {
           <img
             src='https://coincap.io/static/logos/black.svg'
             alt='coincap logo'
-            srcset=''
           />
         </div>
 
