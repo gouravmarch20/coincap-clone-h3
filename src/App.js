@@ -1,7 +1,11 @@
 import React from 'react'
-
+import { Navbar } from './components'
+import { HomePage } from './pages'
 export const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Navbar />
+      <HomePage />
+    </>
   )
 }
