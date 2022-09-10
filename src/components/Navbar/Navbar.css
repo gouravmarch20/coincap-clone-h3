@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  width: 90%;
+  margin: 0 auto;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 27%;
+  padding: 1rem;
+}
+.nav-image {
+  width: 5rem;
+}
