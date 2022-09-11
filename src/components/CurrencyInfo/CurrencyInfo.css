@@ -17,7 +17,7 @@
 }
 .currency-head {
   background-color: rgba(0, 0, 0, 0.05);
-  padding: .3rem 0rem;
+  padding: 0.3rem 0rem;
 }
 .currency-row-center {
   color: rgba(0, 0, 0, 0.6);
@@ -26,4 +26,37 @@
 }
 .currency-row-center:hover {
   color: black;
+}
+@media screen and (max-width: 800px) {
+  .currencies-info-container {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .currency-info:nth-child(6) {
+    display: none;
+  }
+  .currency-info:nth-child(7) {
+    display: none;
+  }
+}
+@media screen and (max-width: 740px) {
+  .currencies-info-container {
+    margin-top: 0rem;
+  }
+
+  .currency-info:nth-child(1) {
+    display: none;
+  }
+  .currency-info:nth-child(5) {
+    display: none;
+  }
+  .currency-info:nth-child(4) {
+    display: none;
+  }
+  .currency-info:nth-child(6) {
+    display: none;
+  }
+
+
 }

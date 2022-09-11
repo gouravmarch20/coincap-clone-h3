@@ -27,9 +27,9 @@ export const CurrencyInfoCard = ({
   return (
     <>
       <tr className='currency-info-card'>
-        <td className='currency-column-center'>{rank}</td>
+        <td className='currency-info currency-column-center'>{rank}</td>
 
-        <td className='currency-img-name'>
+        <td className='currency-info currency-img-name'>
           <img
             className='currency-img'
             src={`https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`}
@@ -41,13 +41,13 @@ export const CurrencyInfoCard = ({
           </div>
         </td>
 
-        <td className='currency-column-center'>{formatPriceUsd}</td>
-        <td className='currency-column-center'>{formatMarketCapUsd}</td>
-        <td className='currency-column-center'>{formatVwap24Hr}</td>
-        <td className='currency-column-center'>{formatSupply}</td>
-        <td className='currency-column-center'>{formatVolume}</td>
+        <td className='currency-info currency-column-center'>{formatPriceUsd}</td>
+        <td className='currency-info currency-column-center'>{formatMarketCapUsd}</td>
+        <td className='currency-info currency-column-center'>{formatVwap24Hr}</td>
+        <td className='currency-info currency-column-center'>{formatSupply}</td>
+        <td className='currency-info currency-column-center'>{formatVolume}</td>
         <td
-          className={`${
+          className={`currency-column-center ${
             formatChangePercent24Hr.charAt(0) === '-'
               ? 'text-red'
               : 'text-green'

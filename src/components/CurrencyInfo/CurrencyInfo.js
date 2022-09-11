@@ -20,14 +20,14 @@ export const CurrencyInfo = () => {
         <table className='currencies-info-table'>
           <thead className='currency-head'>
             <tr>
-              <td className='currency-row-center'>Rank</td>
-              <td className='currency-row-center'>Name</td>
-              <td className='currency-row-center'>Price</td>
-              <td className='currency-row-center'>Market Cap</td>
-              <td className='currency-row-center'>VWAP (24Hr)</td>
-              <td className='currency-row-center'>Supply </td>
-              <td className='currency-row-center'>Volume (24Hr)</td>
-              <td className='currency-row-center'>Change (24Hr)</td>
+              <td className='currency-info currency-row-center'>Rank</td>
+              <td className='currency-info currency-row-center'>Name</td>
+              <td className='currency-info currency-row-center'>Price</td>
+              <td className='currency-info currency-row-center'>Market Cap</td>
+              <td className='currency-info currency-row-center'>VWAP (24Hr)</td>
+              <td className='currency-info currency-row-center'>Supply </td>
+              <td className='currency-info currency-row-center'>Volume (24Hr)</td>
+              <td className='currency-info currency-row-center'>Change (24Hr)</td>
             </tr>
           </thead>
           <tbody>
