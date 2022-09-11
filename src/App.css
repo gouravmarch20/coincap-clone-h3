@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
 }
 
 /* default  */
@@ -22,4 +20,11 @@ ul {
 .btn-primary:hover {
   transform: translateY(-7%);
   transition: all 0.4s;
+}
+
+.text-red {
+  color: rgb(244, 67, 54);
+}
+.text-green {
+  color: rgb(24, 198, 131);
 }
