@@ -1,0 +1,17 @@
+.currency-img {
+  height: 25px;
+  width: 25px;
+}
+.currency-img-name {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.currency-name-symbol span {
+  display: block;
+  text-align: left;
+}
+.currency-symbol {
+  font-size: 0.8em;
+  opacity: "0.7";
+}

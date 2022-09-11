@@ -1,4 +1,6 @@
 import React from 'react'
+
+import './CurrencyInfoCard.css'
 import {
   getCurrencyInDollar,
   getCurrencySystem,
@@ -26,14 +28,15 @@ export const CurrencyInfoCard = ({
     <tr className='currency-info-card'>
       <td>{rank}</td>
 
-      <td>
+      <td className='currency-img-name'>
         <img
+          className='currency-img'
           src={`https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`}
           alt={symbol}
         />
-        <div className='currency-image-info'>
+        <div className='currency-name-symbol'>
           <span>{name}</span>
-          <span>{symbol}</span>
+          <span className='currency-symbol'>{symbol}</span>
         </div>
       </td>
 
