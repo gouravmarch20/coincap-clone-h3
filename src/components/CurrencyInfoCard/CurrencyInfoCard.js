@@ -15,6 +15,7 @@ export const CurrencyInfoCard = ({
   return (
     <tr className='currency-info-card'>
       <td>{rank}</td>
+      {/* TODO: */}
       <td>{/* <img ></img> */}</td>
 
       <td>{priceUsd}</td>
