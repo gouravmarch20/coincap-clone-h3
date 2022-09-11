@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { CurrencyInfo, CurrencyInfoHeader } from '../components'
 
 export const HomePage = () => {
