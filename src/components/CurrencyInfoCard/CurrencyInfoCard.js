@@ -25,33 +25,38 @@ export const CurrencyInfoCard = ({
   const formatVolume = getCurrencySystem(volumeUsd24Hr)
   const formatChangePercent24Hr = getPercentChangeIn24Hr(changePercent24Hr)
   return (
-    <tr className='currency-info-card'>
-      <td>{rank}</td>
+    <>
+      <tr className='currency-info-card'>
+        <td className='currency-column-center'>{rank}</td>
 
-      <td className='currency-img-name'>
-        <img
-          className='currency-img'
-          src={`https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`}
-          alt={symbol}
-        />
-        <div className='currency-name-symbol'>
-          <span>{name}</span>
-          <span className='currency-symbol'>{symbol}</span>
-        </div>
-      </td>
+        <td className='currency-img-name'>
+          <img
+            className='currency-img'
+            src={`https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`}
+            alt={symbol}
+          />
+          <div className='currency-name-symbol'>
+            <span className=''>{name}</span>
+            <span className=' currency-symbol'>{symbol}</span>
+          </div>
+        </td>
 
-      <td>{formatPriceUsd}</td>
-      <td>{formatMarketCapUsd}</td>
-      <td>{formatVwap24Hr}</td>
-      <td>{formatSupply}</td>
-      <td>{formatVolume}</td>
-      <td
-        className={`${
-          formatChangePercent24Hr.charAt(0) === '-' ? 'text-red' : 'text-green'
-        }`}
-      >
-        {formatChangePercent24Hr}
-      </td>
-    </tr>
+        <td className='currency-column-center'>{formatPriceUsd}</td>
+        <td className='currency-column-center'>{formatMarketCapUsd}</td>
+        <td className='currency-column-center'>{formatVwap24Hr}</td>
+        <td className='currency-column-center'>{formatSupply}</td>
+        <td className='currency-column-center'>{formatVolume}</td>
+        <td
+          className={`${
+            formatChangePercent24Hr.charAt(0) === '-'
+              ? 'text-red'
+              : 'text-green'
+          }`}
+        >
+          {formatChangePercent24Hr}
+        </td>
+      </tr>
+    
+    </>
   )
 }

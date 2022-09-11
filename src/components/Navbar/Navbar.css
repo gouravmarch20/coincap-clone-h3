@@ -2,16 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 13vh;
+  position: sticky;
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
+  padding-top: 0.5rem;
+
+
 }
 .nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 27%;
-  padding: 1rem;
 }
 .nav-image {
   width: 5rem;

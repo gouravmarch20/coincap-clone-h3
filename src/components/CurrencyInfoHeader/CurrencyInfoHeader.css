@@ -1,11 +1,18 @@
-.currency-info-header {
-  /* display: flex; */
+.currency-info-card {
+  /* background: whitesmoke; */
+}
+
+.currency-info-lists {
+  /* width: 90%; */
+  display: flex;
+  justify-content: space-between;
   background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246))
     rgb(255, 255, 255);
+  padding: 0 10rem;
+  height: 15rem;
 }
-.currency-info-lists {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.currency-info-list {
+  text-align: center;
+  font-weight: 600;
+  color: white;
 }

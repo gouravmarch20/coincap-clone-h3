@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { CurrencyInfoCard } from '../index'
+import './CurrencyInfo.css'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { getCryptoCurrencies } from '../../redux/asyncThunks'
@@ -17,16 +18,16 @@ export const CurrencyInfo = () => {
     <>
       <section className='currencies-info-container'>
         <table className='currencies-info-table'>
-          <thead>
+          <thead className='currency-head'>
             <tr>
-              <td>Rank</td>
-              <td>Name</td>
-              <td>Price</td>
-              <td>Market Cap</td>
-              <td>VWAP (24Hr)</td>
-              <td>Supply </td>
-              <td>Volume (24Hr)</td>
-              <td>Change (24Hr)</td>
+              <td className='currency-row-center'>Rank</td>
+              <td className='currency-row-center'>Name</td>
+              <td className='currency-row-center'>Price</td>
+              <td className='currency-row-center'>Market Cap</td>
+              <td className='currency-row-center'>VWAP (24Hr)</td>
+              <td className='currency-row-center'>Supply </td>
+              <td className='currency-row-center'>Volume (24Hr)</td>
+              <td className='currency-row-center'>Change (24Hr)</td>
             </tr>
           </thead>
           <tbody>
@@ -36,7 +37,7 @@ export const CurrencyInfo = () => {
           </tbody>
         </table>
 
-        <button onClick={() => setPageNumber(prev => prev + 1)}>
+        <button  className='btn btn-primary mt-1' onClick={() => setPageNumber(prev => prev + 1)}>
           View More
         </button>
       </section>

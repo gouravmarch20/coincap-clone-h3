@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* margin: 0; */
 }
 
 /* default  */
@@ -27,4 +28,10 @@ ul {
 }
 .text-green {
   color: rgb(24, 198, 131);
+}
+.text-center {
+  text-align: center;
+}
+.mt-1{
+  margin-top: 1rem;
 }
