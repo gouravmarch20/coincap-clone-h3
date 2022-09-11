@@ -15,8 +15,13 @@ export const CurrencyInfoCard = ({
   return (
     <tr className='currency-info-card'>
       <td>{rank}</td>
-      {/* TODO: */}
-      <td>{/* <img ></img> */}</td>
+    
+      <td>
+        <img
+          src={`https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`}
+          alt={symbol}
+        />
+      </td>
 
       <td>{priceUsd}</td>
       <td>{marketCapUsd}</td>
